@@ -30,8 +30,9 @@ So generating the connectivity for Blocks 64 through 128 to my desktop might loo
 + Recompile & run the program to generate the NFS text file
 + Examine the NFS file in a text editor and confirm it matches your requirements - otherwise continuing tweaking code
 + Import into the ICT table through **RMB> Import Connectivity > From File**
-+ Package the design from Tools > Package and confirm there are no errors
++ Package the design from **Tools > Package** and confirm there are no errors
 + Forward-annotate to layout
++ Place the Blocks into the Board manually, or automatically with the keyin `pr -file <placement_file>`
 
 ## Sample output
 
@@ -51,8 +52,10 @@ Output will be a text file containing a header with Block properties, followed b
 
 ## Important Files
 
+Many of the files are programming IDE files which you can ignore - the relevant files are:
+
 * `ICT_Generator.java` - this is the source Java code you'll need to tweak to match your requirements (or rewrite in your preferred language)
 * `ICT_Generator.jar` - this is a portable application that can be run on any Windows desktop. It generates connectivity for the *SMB_CRFB.1* Managed Block symbol.
-* `ICT_Coordinates.xlsx` - Excel workbook used to generate the Block coordinates. Puts them in a big square (i.e. 16 x 16)
+* `ICT_Coordinates.xlsx` - Excel workbook used to generate the Block coordinates. Puts them in a big square (i.e. 16 x 16).
 * `ICT_Coordinates.csv` - CSV export from Excel of the coordinates
-* `ICT_Coordiantes.txt` - this is a placement file suitable for Xpedition; replaced the commas in the CSV with spaces
+* `ICT_Coordinates.txt` - this is a placement file suitable for Xpedition. Identical to the CSV except commas were replaced with spaces.
