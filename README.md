@@ -53,3 +53,6 @@ Output will be a text file containing a header with Block properties, followed b
 
 * `ICT_Generator.java` - this is the source Java code you'll need to tweak to match your requirements (or rewrite in your preferred language)
 * `ICT_Generator.jar` - this is a portable application that can be run on any Windows desktop. It generates connectivity for the *SMB_CRFB.1* Managed Block symbol.
+* `ICT_Coordinates.xlsx` - Excel workbook used to generate the Block coordinates. Puts them in a big square (i.e. 16 x 16)
+* `ICT_Coordinates.csv` - CSV export from Excel of the coordinates
+* `ICT_Coordiantes.txt` - this is a placement file suitable for Xpedition; replaced the commas in the CSV with spaces
