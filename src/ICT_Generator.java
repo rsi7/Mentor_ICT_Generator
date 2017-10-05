@@ -6,6 +6,8 @@
 // Date: 09/28/2017
 // Company: Mentor Graphics Corp.
 //
+// Git URL: https://github.com/rsi7/Mentor_ICT_Generator
+//
 // This program writes out an NFS file suitable for importing into an ICT
 // table within DX Designer. The user must specify two integer arguments:
 //
@@ -36,34 +38,26 @@ public class ICT_Generator {
                                 "%Reuse Cell Name@SYM@BLOCK%",
                                 "%Symbol Name%"};
 
-        // This array specifies the values for the properties listed above
-//        String[] headerValues = {"Logical_Physical",
-//                                "True",
-//                                "False",
-//                                "SMB_wCRFP",
-//                                "SMB_wCRFP.1"};
-
+         // This array specifies the values for the properties listed above
         String[] headerValues = {"Logical_Physical",
-                "True",
-                "False",
-                "LP_BLOCK_A",
-                "LP_BLOCK_A.1"};
+                                "True",
+                                "False",
+                                "SMB_wCRFP",
+                                "SMB_wCRFP.1"};
 
         // This array specifies all pins within a Block
-//        String[] netlistPins = {"ALT", "RFI1", "RFI2", "RFO1",
-//                                "RFO2", "RFO3", "RFO4"};
-        String[] netlistPins = {"BLOCK_A_IN","BLOCK_A_OUT"};
+        String[] netlistPins = {"ALT", "RFI1", "RFI2", "RFO1",
+                                "RFO2", "RFO3", "RFO4"};
 
         // This array specifies the net names which should connect the pins
         // These net names will be prefixed with "BLK_##_"
 
-//        String[] netlistNets = {"ALT", "RFIN_1", "RFIN_2", "RFOUT_1",
-//                                "RFOUT_2", "RFOUT_3", "RFOUT_4"};
-        String[] netlistNets = {"IN","OUT"};
+        String[] netlistNets = {"ALT", "RFIN_1", "RFIN_2", "RFOUT_1",
+                                "RFOUT_2", "RFOUT_3", "RFOUT_4"};
 
         // This array species global nets - they will automatically connect
         // to pins with the same name
-//        String[] globalNets = {"VCC", "GND"};
+        String[] globalNets = {"VCC", "GND"};
 
         ///////////////
         // Main Loop //
@@ -165,15 +159,15 @@ public class ICT_Generator {
             /////////////////////////////
 
             // Loop 1: covers the range of global nets to iterate over
-//            for (int i = 0; i < globalNets.length; i++) {
-//                file.write(globalNets[i]);
-//
-//                // Loop 2: populates the global net in each column
-//                for (int j = numBlocksMin; j <= numBlocksMax; j++) {
-//                    file.write("\t" + globalNets[i]);
-//                }
-//                file.write("\n");
-//            }
+            for (int i = 0; i < globalNets.length; i++) {
+                file.write(globalNets[i]);
+
+                // Loop 2: populates the global net in each column
+                for (int j = numBlocksMin; j <= numBlocksMax; j++) {
+                    file.write("\t" + globalNets[i]);
+                }
+                file.write("\n");
+            }
 
             // Finished writing to file...
             // Go ahead and exit program cleanly
