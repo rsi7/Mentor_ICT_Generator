@@ -54,11 +54,14 @@ Output will be a text file containing a header with Block properties, followed b
 
 Many of the files are programming IDE files which you can ignore - the relevant files are:
 
-* `ICT_Generator.java` - this is the source Java code you'll need to tweak to match your requirements (or rewrite in your preferred language)
-* `ICT_Generator.jar` - this is a portable application that can be run on any Windows desktop. It generates connectivity for the *SMB_CRFB.1* Managed Block symbol.
-* `ICT_Coordinates.xlsx` - Excel workbook used to generate the Block coordinates. Puts them in a big square (i.e. 16 x 16).
-* `ICT_Coordinates.csv` - CSV export from Excel of the coordinates
-* `ICT_Coordinates.txt` - this is a placement file suitable for Xpedition. Identical to the CSV except commas were replaced with spaces.
-* `CRFP_512.7z` - this is an archive of a sample 512 Managed Block design. It has two ICT tables containing 256 Blocks each (specifically, the *SMB_CRFB.1* symbol). The blocks have been placed in an array in layout.
-* `CRFP_LIB.7z` - this an archive of a sample library for the above project
-* `SMB_wCRFP.7z` - this an archive of the source project for the *SMB_CRFB.1* Managed Block symbol
+* Source code
+    * `ICT_Generator.java` - this is the source Java code you'll need to tweak to match your requirements (or rewrite in your preferred language)
+    * `ICT_Generator.jar` - this is a portable application that can be run on any Windows desktop. It generates connectivity for the *SMB_CRFB.1* Managed Block symbol.
+* Placement Files
+    * `ICT_Coordinates.xlsx` - Excel workbook used to generate the Block coordinates. Puts them in a big square (i.e. 16 x 16).
+    * `ICT_Coordinates.csv` - CSV export from Excel of the coordinates
+    * `ICT_Coordinates.txt` - this is a placement file suitable for Xpedition. Identical to the CSV except commas were replaced with spaces.
+* Project Files
+    * `CRFP_512.7z` - this is an archive of a sample 512 Managed Block design. It has two ICT tables containing 256 Blocks each (specifically, the *SMB_CRFB.1* symbol). The blocks have been placed in an array in layout.
+    * `CRFP_LIB.7z` - this an archive of a sample library for the above project
+    * `SMB_wCRFP.7z` - this an archive of the source project for the *SMB_CRFB.1* Managed Block symbol
