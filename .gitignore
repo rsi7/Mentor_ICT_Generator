@@ -1,0 +1,16 @@
+#gitignore file for the Mentor_ICT_Generator repository
+
+# skip the /.idea directory
+# this is IntelliJ IDEA IDE development files
+.idea/*
+
+# skip everything in /out directory
+out/*
+
+# skip everything in /src directory
+src/*
+
+# Do not apply the exception rules to the source code files!
+!*.java
+!*.class
+!*.jar
