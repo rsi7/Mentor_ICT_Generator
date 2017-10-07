@@ -6,8 +6,8 @@
 
 # skip everything in /out directory
 out/*
-!*.class
-!*/.jar
+!out/production/ICT_Generator/ICT_Generator/*
+!out/artifacts/ICT_Generator_jar/*
 
 # skip everything in /src directory
 src/*
