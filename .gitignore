@@ -6,11 +6,11 @@
 
 # skip everything in /out directory
 out/*
+!*.class
+!*/.jar
 
 # skip everything in /src directory
 src/*
 
 # Do not apply the exception rules to the source code files!
 !*.java
-!*.class
-!*.jar

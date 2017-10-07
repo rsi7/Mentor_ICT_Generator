@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="ICT_Generator:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/ICT_Generator_jar</output-path>
-    <root id="archive" name="ICT_Generator.jar">
-      <element id="module-output" name="ICT_Generator" />
-    </root>
-  </artifact>
-</component>
