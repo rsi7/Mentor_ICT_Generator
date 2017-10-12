@@ -6,5 +6,3 @@
 
 # Do not apply the exception rules to the source code files!
 #!*.java
-!out/production/ICT_Generator/ICT_Generator/*
-!out/artifacts/ICT_Generator_jar/*
